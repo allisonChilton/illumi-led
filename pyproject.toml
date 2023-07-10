@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "illumi-led"
+version = "0.1.0"
+description = ""
+authors = ["Allison Chilton <github.allie@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "illumi_led"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nordic-uart = {path = "../nordic-uart", develop = true}
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.14.0"
+build = "^0.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
